@@ -39,10 +39,10 @@ This introductory laboratory project taught me to work effectively within a prof
 <br>
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 20px 0;">
-  <img src="/Kiyowoski-Project-Images-Videos/LRM_20250815_212720.jpg" alt="Jewelry photo 1" style="width: 100%; border-radius: 6px;">
-  <img src="/Kiyowoski-Project-Images-Videos/LRM_20250816_111735.jpg" alt="Jewelry photo 2" style="width: 100%; border-radius: 6px;">
-  <img src="/Kiyowoski-Project-Images-Videos/LRM_20250817_120451.jpg" alt="Jewelry photo 3" style="width: 100%; border-radius: 6px;">
-  <img src="/Kiyowoski-Project-Images-Videos/LRM_20250818_124028.jpg" alt="Jewelry photo 4" style="width: 100%; border-radius: 6px;">
+  <img src="../Kiyowoski-Project-Images-Videos/LRM_20250815_212720.jpg" alt="Jewelry photo 1" style="width: 100%; border-radius: 6px;">
+  <img src="../Kiyowoski-Project-Images-Videos/LRM_20250816_111735.jpg" alt="Jewelry photo 2" style="width: 100%; border-radius: 6px;">
+  <img src="../Kiyowoski-Project-Images-Videos/LRM_20250817_120451.jpg" alt="Jewelry photo 3" style="width: 100%; border-radius: 6px;">
+  <img src="../Kiyowoski-Project-Images-Videos/LRM_20250818_124028.jpg" alt="Jewelry photo 4" style="width: 100%; border-radius: 6px;">
 </div>
 
 <br>
