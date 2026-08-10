@@ -1,0 +1,858 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal Notebook and Portfolio">
+      
+      
+        <meta name="author" content="Javis">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Surfaces and Interfaces 2 - Javis' Personal Website</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capillary-forces" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Javis&#39; Personal Website" class="md-header__button md-logo" aria-label="Javis' Personal Website" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Javis' Personal Website
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Surfaces and Interfaces 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Javis&#39; Personal Website" class="md-nav__button md-logo" aria-label="Javis' Personal Website" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Javis' Personal Website
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clubs and Societies
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Clubs and Societies
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pal_tv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PalTV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Courses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modern%20Optical%20and%20Atomic%20Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Optical and Atomic Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Condensed%20Matter%20Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Condensed Matter Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quantum%20Mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nuclear%20and%20Particle%20Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nuclear and Particle Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#capillary-forces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capillary forces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capillary-rise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capillary rise
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particles-at-the-surface-of-a-liquid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Particles at the surface of a liquid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homogeneous-nucleation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Homogeneous nucleation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Homogeneous nucleation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solid-liquid-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solid-liquid interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-free-energy-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume free energy change
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Surfaces and Interfaces 2</h1>
+
+<p>This is the extension of <a href="../Surfaces%20and%20Interfaces%201/">Surfaces and Interfaces 1</a> where we will be dealing with fluid-fluid interfaces. </p>
+<p><img alt="Pasted image 20260407155113.png" src="../../Physics%20Note%20Figures/Pasted%20image%2020260407155113.png" /></p>
+<p>Similarly, we can balance the forces at the triple line where the fluid meet. This forms a <strong>Neuman triangle</strong>. What is special about this triangle is that it follows sine rule: </p>
+<div class="arithmatex">\[ \frac{\gamma_{13}}{\sin\theta_2} = \frac{\gamma_{12}}{\sin\theta_3} = \frac{\gamma_{23}}{\sin\theta_1} \]</div>
+<p>We can also <em>balance the horizontal forces</em> to define the <strong>spreading coefficient</strong>, <span class="arithmatex">\(S\)</span> which predicts if the lens will spread along the interface of fluid 1 and 3 to form a film.  We get $$ S = \gamma_{13} - \gamma_{12} - \gamma_{23} $$
+- If <span class="arithmatex">\(S&gt;0\)</span>, we have complete spreading 
+- If <span class="arithmatex">\(S &lt;0\)</span>, the lens configuration is most stable
+- If <span class="arithmatex">\(S=0\)</span>, lens and spreading reach equilibrium (threshold)</p>
+<hr />
+<h2 id="capillary-forces">Capillary forces</h2>
+<ul>
+<li>Ability of a liquid to flow in very narrow spaces without external forces</li>
+<li>Originates from surface tension of liquids that are in contact with solids</li>
+<li>Liquid molecules have a stronger bonds than gas so they pull the interfacial liquid molecules away from the interface</li>
+<li>If the liquid surface is curved then there is a pressure inside the liquid. At equilibrium, there is a pressure difference across the interface. </li>
+</ul>
+<p>For a more complicated case like a capillary bridge, 
+<img alt="Pasted image 20260407160904.png" src="../../Physics%20Note%20Figures/Pasted%20image%2020260407160904.png" /></p>
+<p>the pressure difference is dependent on the curvature. 
+ $$ \Delta P \equiv P_{in} - P_{out} = \gamma_L C = \gamma_L \left( \frac{1}{R_1} + \frac{1}{R_2} \right) $$</p>
+<p>where <span class="arithmatex">\(\gamma_L\)</span> is the surface tension of the liquid and <span class="arithmatex">\(P_{\text{in}}\)</span> is the Laplace pressure. If the liquid structures are large enough, then the influence of gravity (hydrostatic pressure) has to be considered: $$ \Delta P = \gamma_L \left( \frac{1}{R_1} + \frac{1}{R_2} \right) + \rho gh $$</p>
+<p>The threshold for considering the hydrostatic pressure is $$ x_c = \sqrt{\frac{\gamma_L}{\rho g}} $$
+where <span class="arithmatex">\(x_c\)</span> is the balance of surface tension against gravitational force. For structures much smaller than <span class="arithmatex">\(x_c\)</span>, influence of gravity can be neglected. </p>
+<hr />
+<h2 id="capillary-rise">Capillary rise</h2>
+<p>When a capillary is inserted into a liquid, the level of liquid in the tube is seen to go up or down by a height <span class="arithmatex">\(h\)</span> with respect to the surface of the liquid. </p>
+<p>We want to determine the change of <span class="arithmatex">\(h\)</span>. To do so, we have to consider when the free energy is minimum i.e. <span class="arithmatex">\(dG/dh = 0\)</span> </p>
+<p>The free energy is $$ dG = 2\pi r_c \, dh \, (\gamma_{SL} - \gamma_{SG}) + \pi r_c^2 \rho gh \, dh $$
+$$\implies h = \frac{2(\gamma_{SG} - \gamma_{SL})}{r_c \rho g} = \frac{2\gamma_{LG} \cos \theta_{SL}}{r_c \rho g} $$</p>
+<hr />
+<h2 id="particles-at-the-surface-of-a-liquid">Particles at the surface of a liquid</h2>
+<ol>
+<li>
+<p>Small particles</p>
+<ul>
+<li>Defined as particles which are not significantly influenced by gravity and buoyancy  </li>
+<li>If the contact angle is zero (fully wetting) then the particle sinks into the liquid</li>
+<li>If the contact is larger than zero then it floats on the interface without miniscus. </li>
+</ul>
+</li>
+<li>
+<p>Large particles</p>
+<ul>
+<li>Gravity and buoyancy has the ability to move the particle </li>
+<li>Liquid deformed by the contact angle of the particle
+<img alt="Pasted image 20260407171350.png" src="../../Physics%20Note%20Figures/Pasted%20image%2020260407171350.png" /></li>
+</ul>
+</li>
+</ol>
+<p>To evaluate how stable the large particle is at the interface, we want to calculate the Gibbs free energy change before and after the particle is pushed into the liquid. </p>
+<p>$$ \Delta G = 2\pi R^2 (1 - \cos \theta)(\gamma_{SL} - \gamma_{SG}) + \pi R^2 \sin^2 \theta \, \gamma_{SG} = \pi R^2 \gamma_{LG} (\cos \theta - 1)^2 $$
+For <span class="arithmatex">\(\Delta G &gt;0\)</span>, the particle sinks</p>
+<hr />
+<h2 id="homogeneous-nucleation">Homogeneous nucleation</h2>
+<ul>
+<li>Supercooling of water. </li>
+</ul>
+<p>Without any disturbances and impurities as the the nucleus, the freezing process involves two types of Gibbs free energy at equilibrium</p>
+<h4 id="solid-liquid-interface">Solid-liquid interface</h4>
+<p>As mentioned in <a href="../Surfaces%20and%20Interfaces%201/">Surfaces and Interfaces 1</a> that the interfaces increase the energy in the system. </p>
+<p>As the water begins to freeze, an interface is formed between solid and liquid. 
+<img alt="Pasted image 20260407173524.png" src="../../Physics%20Note%20Figures/Pasted%20image%2020260407173524.png" /></p>
+<p>This has a Gibbs free energy of $$ \Delta G_{\text{interf.}} = 4\pi r^2 \gamma_{\text{{SL}}}&gt; 0 $$</p>
+<h4 id="volume-free-energy-change">Volume free energy change</h4>
+<p>As the chemical potential (Gibbs free energy per particle) of the molecules in solid state, <span class="arithmatex">\(\mu_s\)</span> is lower than in liquid state <span class="arithmatex">\(\mu_L\)</span>, there is a decrease of free energy proportional to the volume of the nucleus. </p>
+<p>$$ \Delta G_{\text{phase}} = \frac{4}{3}\pi r^3 \rho (\mu_s - \mu_L) &lt; 0 $$
+And the total free energy change of the system due to nucleation is</p>
+<p>$$ \Delta G(r) = \Delta G_{\text{interf.}}(r) + \Delta G_{\text{phase}}(r) $$
+<img alt="Pasted image 20260407175320.png" src="../../Physics%20Note%20Figures/Pasted%20image%2020260407175320.png" /></p>
+<p>There is an energy barrier opposing the transition, meaning that there is an unstable equilibrium between two transitions. </p>
+<p>However, if there is external perturbation, it promotes growth of the nucleus and lowers the free energy of the system, leading to freezing. Or if there is a nucleus site, i.e. impurities, it lowers the interfacial energy (because in this case, the nucleation occurs around the impurity instead of costing energy to make a solid-liquid interface) which allows <strong>heterogeneous nucleation</strong> and it is why the ice forms from the edges of the pond. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

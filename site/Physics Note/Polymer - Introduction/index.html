@@ -1,0 +1,921 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal Notebook and Portfolio">
+      
+      
+        <meta name="author" content="Javis">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Polymer Introduction - Javis' Personal Website</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dimension-of-polymer-chains" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Javis&#39; Personal Website" class="md-header__button md-logo" aria-label="Javis' Personal Website" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Javis' Personal Website
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Polymer   Introduction
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Javis&#39; Personal Website" class="md-nav__button md-logo" aria-label="Javis' Personal Website" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Javis' Personal Website
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clubs and Societies
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Clubs and Societies
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pal_tv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PalTV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../archery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Courses
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Courses
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modern%20Optical%20and%20Atomic%20Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Optical and Atomic Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Condensed%20Matter%20Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Condensed Matter Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Quantum%20Mechanics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Mechanics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nuclear%20and%20Particle%20Physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nuclear and Particle Physics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dimension-of-polymer-chains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dimension of Polymer Chains
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#revision-of-random-walk-model-florys-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revision of Random Walk Model (Flory's model)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Revision of Random Walk Model (Flory&#39;s model)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#theoretical-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Theoretical value
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-life" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real life
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-correction-to-random-walk-model-molecular-interactions-and-interfacial-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second correction to random-walk model (Molecular interactions and interfacial energy)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Second correction to random-walk model (Molecular interactions and interfacial energy)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polymer-polymer-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Polymer-polymer contact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymer-solvent-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Polymer-solvent contact
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solvent-solvent-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solvent-solvent contact
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Polymer   Introduction</h1>
+
+<ul>
+<li>
+<p>Polymer is a giant molecule made up of many repeating units covalently joined together in the form of a long chain</p>
+</li>
+<li>
+<p>Homopolymer: Polymer composed of only one type of molecule</p>
+</li>
+<li>Copolymer: Two more more repeat units</li>
+<li>
+<p>Block copolymer: repeating units are arranged in blocks</p>
+</li>
+<li>
+<p>Degree of polymerisation: number of repeat units present in a chain</p>
+</li>
+</ul>
+<p>At a given temperature, polymeric materials are in one of the following states: </p>
+<ul>
+<li>Liquid</li>
+<li>Glass</li>
+<li>Crystalline</li>
+<li>Liquid Crystalline: Kevlar</li>
+</ul>
+<hr />
+<h2 id="dimension-of-polymer-chains">Dimension of Polymer Chains</h2>
+<p>We are using <strong>random walk model</strong> to describe the relationship between degree of polymerisation <span class="arithmatex">\(N\)</span> and the overall dimensions of the polymer chain. </p>
+<p><img alt="Pasted image 20260408170917.png" src="../../Physics%20Note%20Figures/Pasted%20image%2020260408170917.png" /></p>
+<p>Assuming each link <span class="arithmatex">\(i\)</span> is defined by a vector <span class="arithmatex">\(\vec{a}_i\)</span> and the polymer end-to-end vector <span class="arithmatex">\(\vec{r}\)</span> is $$ \vec{r} = \vec{a_1} + \vec{a_2} + \cdots + \vec{a_N} = \sum_{i=1}^N \vec{a_i} $$
+$<span class="arithmatex">\(\implies \langle \vec{r} \cdot \vec{r} \rangle = \left( \sum_{i=1}^N \vec{a_i} \right) \cdot \left( \sum_{j=1}^N \vec{a_j} \right) = N a^2 + \underbrace{\left( \sum_{i \neq j} \vec{a_i} \cdot \vec{a_j} \right)}_{= 0 \text{ (random orient.)}}\)</span>$</p>
+<p>In fact, the summation term is finite and negligible in real polymer chains. See lecture note. </p>
+<p>Using this along with the probability distribution of end-to-end distances $$ P(N, r) = \left( \frac{2\pi N a^2}{3} \right)^{-3/2} e^{-\frac{3r^2}{2Na^2}} $$
+and <a href="../Probability%20and%20List%20of%20Formulae/">Boltzmann entropy</a> $$ S(r) = k_B \ln P(N, r) = -k_B \frac{3r^2}{2Na^2} + \text{constant} $$</p>
+<p>We get $<span class="arithmatex">\(G_{el}(r) = \cancel{H(r)} - T S(r) = k_B T \frac{3r^2}{2Na^2} + \text{constant}\)</span>$
+where <span class="arithmatex">\(H(r) =0\)</span> because enthalpic contribution is negligible (we will include this later) as 
+1. freely jointed chain model does not take into account any molecular interactions<br />
+2. the polymer with multiple segments are able to occupy the same space </p>
+<hr />
+<h2 id="revision-of-random-walk-model-florys-model">Revision of Random Walk Model (Flory's model)</h2>
+<h4 id="theoretical-value">Theoretical value</h4>
+<p>We, so far, do not care about the volume occupied by the polymer. The chain can actually <em>overlap</em> itself $$ R = \sqrt{\langle \vec{r}^2 \rangle} = a\sqrt{N} $$
+with a density of $$ \rho \sim \frac{N}{R^3} \sim \frac{1}{\sqrt{N}} = N^{-1/2} $$</p>
+<h4 id="real-life">Real life</h4>
+<p>In reality, the polymer cannot intersect themselves. So 'self-avoiding walk' model should be used. </p>
+<p>The derivation of free energy of Flory model is far from trivial. We will quote the results and assumptions: </p>
+<ul>
+<li>Each monomer occupies a small volume <span class="arithmatex">\(v\sim a^3\)</span></li>
+<li>The concentration of the segments is <span class="arithmatex">\(c \sim N/r^3\)</span> </li>
+</ul>
+<p>The Gibb's free energy is $$ G_{\text{excl}}(r) = -T S_{\text{excl}}(r) = k_B T v \frac{N^2}{2r^3} &gt; 0 $$
+where <span class="arithmatex">\(S = k_Bv N/V\)</span> </p>
+<p>Combining this with the random walk model gives the total expression for the Gibbs free energy: </p>
+<p>$$ G(r) = k_B T \frac{3r^2}{2Na^2} + k_B T v \frac{N^2}{2r^3} + \text{cte} $$
+<img alt="Pasted image 20260408175645.png" src="../../Physics%20Note%20Figures/Pasted%20image%2020260408175645.png" /></p>
+<p>Therefore the equilibrium end-to-end distance is, in practice, $$ \sqrt{\langle \vec{r}^2 \rangle} = aN^\nu $$
+where <span class="arithmatex">\(\nu = 3/5\)</span>. </p>
+<hr />
+<h2 id="second-correction-to-random-walk-model-molecular-interactions-and-interfacial-energy">Second correction to random-walk model (Molecular interactions and interfacial energy)</h2>
+<p>In random walk model, we mentioned that the enthalpic contribution is zero but it is not correct in reality. We have to consider: </p>
+<ol>
+<li>polymer-polymer contact</li>
+<li>polymer-solvent contact</li>
+<li>solvent-solvent contact</li>
+</ol>
+<h4 id="polymer-polymer-contact">Polymer-polymer contact</h4>
+<p>$$
+N_{pp} = \frac{1}{2} z N v c
+$$
+with<br />
+- <span class="arithmatex">\(z\)</span> the number of nearest monomer neighbours<br />
+- <span class="arithmatex">\(c\)</span> the concentration of polymer segments<br />
+- <span class="arithmatex">\(v\)</span> is the volume of a monomer so <span class="arithmatex">\(v c\)</span> is the probability of seeing another monomer along the chain</p>
+<h4 id="polymer-solvent-contact">Polymer-solvent contact</h4>
+<p>$$
+N_{ps} = z N v (\rho_s - c)
+$$
+with<br />
+- <span class="arithmatex">\(\rho_s\)</span> is the concentration of solvent molecules in the bulk liquid</p>
+<h4 id="solvent-solvent-contact">Solvent-solvent contact</h4>
+<p>$$
+N_{ss} = N_{ss}^0 - N_{ps} - N_{pp}
+$$
+where<br />
+- <span class="arithmatex">\(N_{ss}^0\)</span> is the number of solvent-solvent contacts in the absence of the polymer</p>
+<p>The total enthalpy of the system is then <br />
+$$
+U_{\text{int}} = N_{pp} \epsilon_{pp} + N_{ps} \epsilon_{ps} + N_{ss} \epsilon_{ss} 
+$$
+$$ \implies
+ \frac{1}{2} z N v c (\epsilon_{pp} + \epsilon_{ss} - 2 \epsilon_{ps}) + \underbrace{z N v (\epsilon_{ps} - \epsilon_{ss}) + N_{ss}^0 \epsilon_{ss}}_{cte}
+$$</p>
+<p>$$ \implies U_{\text{int}} = -2 \chi v \frac{N^2}{2 r^3} + \text{constant} = H &lt; 0$$
+where <span class="arithmatex">\(c \sim N/r^3\)</span> and <span class="arithmatex">\(\chi = zNvc(\varepsilon_{ps}-\varepsilon_{pp}-\varepsilon_{ss})/2\)</span> and the pressure is constant. </p>
+<hr />
+<p>Combining the enthalpy and entropy from Flory model derived above, we have </p>
+<blockquote>
+<p>[!note] 
+ $$
+G = H - TS = \underbrace{k_B T v \left( 1 - \frac{2 \chi}{k_B T} \right) \frac{N^2}{2 r^3}}<em _H="+H" excl="excl">{G</em>}} + \underbrace{\frac{3 k_B T}{2 N a^2} r^2<em el="el">{G</em>
+$$}} + \text{constant</p>
+</blockquote>
+<p>We can distinguish the behaviour of the polymer solution
+ - If <span class="arithmatex">\(\chi &lt; k_B T/2\)</span> , it becomes Flory model as polymer extended in solvent <strong>good solvent</strong> (because <span class="arithmatex">\(G_{excl} &gt; H\)</span> so entropy increases)
+ -  If <span class="arithmatex">\(\chi = k_B T/2\)</span>, <span class="arithmatex">\(G_{excl}\)</span> cancels with <span class="arithmatex">\(H \implies\)</span> <strong>theta condition</strong> where all corrections can be ignored 
+ - If <span class="arithmatex">\(\chi &lt; k_B T/2\)</span>, <span class="arithmatex">\(H &gt; G_{excl}\)</span>, the interfacial energy between the polymer and solvent dominates, hence <strong>poor solvent</strong></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

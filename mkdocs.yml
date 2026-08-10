@@ -1,0 +1,39 @@
+site_name: Javis' Personal Website
+site_author: Javis
+site_description: Personal Notebook and Portfolio
+nav:
+  - Home: index.md
+  - Projects: projects.md
+  - Clubs and Societies: clubs_and_societies.md
+  - Contact: contact.md
+
+
+theme:
+  name: material
+  palette:
+    # Dark/Light mode toggle
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js  
