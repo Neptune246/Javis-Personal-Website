@@ -47,4 +47,4 @@ This introductory laboratory project taught me to work effectively within a prof
 
 <br>
 
-- **Video Editing and Post-Production:** Edited an introductory promotional video for Kiyowoski using DaVinci Resolve. The final work in MP4 is featured [here](https://youtu.be/O6BrXowpZDQ)
+- **Video Editing and Post-Production:** Edited an introductory promotional video for Kiyowoski using DaVinci Resolve. The final work in MP4 is featured [here](https://youtu.be/O6BrXowpZDQ).
