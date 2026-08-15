@@ -18,4 +18,4 @@
 
     - **First Aid Trained:** Completed formal first aid theory and assessments through St John Ambulance.
 
-    - **Cadet First Aider:** Former certified [Cadet First Aider](../Clubs and societies\First aid.jpeg) who represented my school in regional first aid and drill/marching competitions.
+    - **Cadet First Aider:** Former certified [Cadet First Aider](./Clubs%20and%20societies/First%20aid.jpeg) who represented my school in regional first aid and drill/marching competitions.
