@@ -34,7 +34,7 @@ This introductory laboratory project taught me to work effectively within a prof
 
 ### 1. Jewelry photo and video editing { data-toc-label="Jewelry photo/video editing" }
 
-- **Commercial Photography and Editing:** Captured RAW photos on mobile and processed them using Adobe Lightroom for promotional campaigns for Kiyowoski. A selection of the final work is featured below:
+- **Commercial Photography and Editing:** Captured photos on mobile and processed them using Adobe Lightroom for promotional campaigns for Kiyowoski. A selection of the final work is featured below:
 
 <br>
 
