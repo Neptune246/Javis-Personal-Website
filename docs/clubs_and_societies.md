@@ -2,7 +2,7 @@
 
 ---
 
-1. [PalTV](https://paltv.co.uk)
+1. [PalTV](https://paltv.co.uk){ target="_blank" }
 
     - **Drone and Camera Operator:** Operated drones and camera systems for live broadcasts - including Regatta '24, '25 and '26, as well as the Barbarians vs DURFC match and semi-live events for organisations such as the Durham University Palatinate Orchestra (DUPO), Durham University Classical Ensemble (DUCE) and the Durham Cathedral Institute (DCI).
 
@@ -18,4 +18,4 @@
 
     - **First Aid Trained:** Completed formal first aid theory and assessments through St John Ambulance.
 
-    - **Cadet First Aider:** Former certified [Cadet First Aider](./Clubs%20and%20societies/First%20aid.jpeg) who represented my school in regional first aid and drill/marching competitions.
+    - **Cadet First Aider:** Former certified [Cadet First Aider](./Clubs%20and%20societies/First%20aid.jpeg){ target="_blank" } who represented my school in regional first aid and drill/marching competitions.

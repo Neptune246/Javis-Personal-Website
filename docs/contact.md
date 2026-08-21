@@ -6,4 +6,4 @@ I am open for networking and any job opportunity. Feel free to contact me at
 
 :material-phone: +447923875892
 
-:material-linkedin: [Javis (Tze Yie) Kho](https://www.linkedin.com/in/javis-k-b63a59289)
+:material-linkedin: [Javis (Tze Yie) Kho](https://www.linkedin.com/in/javis-k-b63a59289){ target="_blank" }
