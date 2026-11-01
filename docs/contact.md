@@ -1,6 +1,6 @@
 # Contact me
 
-I am open for networking and any job opportunity. The CV is attached in form of pdf [here](Physics%20Note%20Figures\Mass_of_Jupiter_V6.pdf) Feel free to contact me at
+I am open for networking and any job opportunity. The CV is attached [here](Physics%20Note%20Figures\Mass_of_Jupiter_V6.pdf) in form of pdf . Feel free to contact me at
 
 :material-email: [javiskho12345@gmail.com](mailto:javiskho12345@gmail.com) (Preferred)
 
