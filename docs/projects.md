@@ -14,7 +14,7 @@ Through this project, I went beyond the core curriculum to apply theoretical and
 
 Performed visible light spectroscopy to investigate and model the temperature dependence of the band gap energies of zinc selenide and silicon. The experimental results were analysed using the Varshni, Viña and O’Donnell-Chen models, which were then quantitatively compared to assess their relative accuracies. 
 
-This project bridged the gap between theoretical frameworks and practical laboratory work. As the topic was largely outside the taught syllabus, I synthesised knowledge from across my degree to successfully execute the experiment. I gained hands-on experience in assembling optical table setups, operating electronics like silicon photodiodes and processing experimental data. Additionally, I took the lead in guiding and mentoring a peer who was less familiar with the laboratory environment.
+This project bridged the gap between theoretical frameworks and practical laboratory work. As the topic was largely outside the taught syllabus, I synthesised knowledge from across my degree to successfully execute the experiment. I gained hands-on experience in assembling optical table setups, operating electronics and processing experimental data. Additionally, I took the lead in guiding and mentoring a peer who was less familiar with the laboratory environment.
 
 ### 3. [Level 2 Research-Led Investigation in Astronomy - The Role of Gravitational Perturbations in Determining Jupiter’s Mass: A Comparative Study of Io and Callisto](Physics%20Note%20Figures/Mass_of_Jupiter_V6.pdf){ target="_blank" } { data-toc-label="RLI" }
 
